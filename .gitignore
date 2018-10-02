@@ -1,0 +1,8 @@
+.DS_Store
+composer.lock
+.env
+.idea/
+cache/
+twig-templates/
+vendor/
+.vagrant/
