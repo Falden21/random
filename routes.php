@@ -9,3 +9,5 @@ $router->map('get', '/', 'Acme\Controllers\PageController@getShowHomePage', 'hom
 $router->map('get', '/register', 'Acme\Controllers\RegisterController@getShowRegisterPage', 'register');
 $router->map('post', '/register', 'Acme\Controllers\RegisterController@postShowRegisterPage', 'register_post');
 $router->map('get', '/login', 'Acme\Controllers\RegisterController@getShowLoginPage', 'login');
+
+$router->map('get', '/about', 'Acme\Controllers\pageController@getShowPage', 'about');

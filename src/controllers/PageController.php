@@ -12,6 +12,8 @@ class PageController extends BaseController
 
     }
 
+    public function getShowPage(){
 
+    }
 
 }
