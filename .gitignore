@@ -6,3 +6,4 @@ cache/
 twig-templates/
 vendor/
 .vagrant/
+phinx.yml
