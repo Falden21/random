@@ -11,13 +11,20 @@
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li><li class="nav-item">
-                <a class="nav-link" href="/register">Register</a>
+                <a class="nav-link" href="/about-acme">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/login">login</a>
+                <a class="nav-link" href="/register">Register</a>
             </li>
+            @if(Acme\Auth\LoggedIn::user())
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+            @else
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">login</a>
+                </li>
+            @endif
         </ul>
     </div>
 </nav>

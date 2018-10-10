@@ -53,13 +53,8 @@ class RegisterController extends BaseController
         $user->password   = password_hash($_REQUEST['password'], PASSWORD_DEFAULT);
         $user->save();
 
-        echo "Posted!";
-    }
-
-    public function getShowLoginPage()
-    {
-//        include(__DIR__ . "/../../views/login.html");
-        echo $this->blade->render('login');
+        header("Location: /success");
+        exit;
     }
 
 }
